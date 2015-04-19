@@ -1,5 +1,7 @@
 # isa-plain-function
 
+[![Build Status](https://drone.io/github.com/mvhenten/isa-plain-function/status.png)](https://drone.io/github.com/mvhenten/isa-plain-function/latest)
+
 Simple check to see if a function has any prototype members.
 
 Sometimes it's useful to check if a function can be considered "class-like".
