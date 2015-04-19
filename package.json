@@ -1,0 +1,29 @@
+{
+  "name": "isa-plain-function",
+  "version": "0.0.1",
+  "description": "Simple test to determine if a function has any prototype members",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvhenten/isa-plain-function.git"
+  },
+  "keywords": [
+    "isa",
+    "plain",
+    "function",
+    "test",
+    "type"
+  ],
+  "author": "Matthijs van Henten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvhenten/isa-plain-function/issues"
+  },
+  "homepage": "https://github.com/mvhenten/isa-plain-function",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
