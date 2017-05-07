@@ -1,6 +1,9 @@
 {
   "name": "isa-plain-function",
   "version": "0.0.2",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "description": "Simple test to determine if a function has any prototype members",
   "main": "index.js",
   "scripts": {
@@ -23,7 +26,7 @@
     "url": "https://github.com/mvhenten/isa-plain-function/issues"
   },
   "homepage": "https://github.com/mvhenten/isa-plain-function",
-  "devDependencies": {
+  "dependencies": {
     "tape": "^4.6.3"
   }
 }
