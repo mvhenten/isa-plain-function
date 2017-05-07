@@ -10,15 +10,21 @@
 module.exports = function isPlainFunction(value) {
     if (typeof value !== 'function') return false;
 
-    for (var c in value.prototype)
+    if (!value.prototype)
+        return true;
+
+    for (let c in value.prototype)
         return false;
-        
+
     if( ! Object.getOwnPropertyNames ) 
         return true;
 
-    var own = Object.getOwnPropertyNames(value.prototype);
+    const own = Object.getOwnPropertyNames(value.prototype);
 
     if (own.length !== 1)
+        return false;
+        
+    if (/^class /.test(value.toString()))
         return false;
 
     return true;

@@ -1,5 +1,5 @@
 var test = require('tape'),
-    isPlainFunction = require('../index');
+    isPlainFunction = require('./index');
 
 
 // fixtures
@@ -82,7 +82,14 @@ var cases = [{
 }, {
     label: 'undefined is not a plain functions',
     ok: false,
-}, ];
+}, {
+    label: "a class is not a plain function",
+    value: class User{},
+    ok: false
+}
+
+
+];
 
 
 test('isPlainFunction', function(assert) {
